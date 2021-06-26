@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Colorlib Templates">
+<meta name="author" content="Colorlib">
+<meta name="keywords" content="Colorlib Templates">
+
+<title>My Blog</title>
+
+
+<link href="/css/signin2.css" rel="stylesheet" media="all">
+</head>
+<body>
+  <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+    <div class="wrapper wrapper--w450">
+      <div class="card card-4">
+        <div class="card-body">
+          <h2 class="title">Login</h2>
+          <form action="/login" method="POST">
+  
+  <div class="row row-space">
+    <div class="col-2">
+      <div class="input-group">
+        <%- include("../includes/loginMessages.ejs") %> 
+        <label for="inputEmail" class="label">Email</label>
+        <input class="input--style-4" type="email" name="email" id="inputEmail">
+      </div>
+    </div>
+  </div>
+<div class="row row-space">
+<div class="col-2">
+<div class="input-group">
+<label for="inputpassword" class="label">Password</label>
+<input class="input--style-4" type="Password" name="password" id="inputpassword">
+</div>
+</div>
+</div>
+<div class="checkbox p-t-15">
+    <label>
+        <input name="remember" type="checkbox" value="remember-me"/>
+    </label>
+    <span>Remember Me</span> 
+</div>
+<div class="p-t-15">
+<button class="btn btn--radius-2 btn--blue" type="submit">Login</button>
+</div>
+<div class="checkbox p-t-15">
+  <label class="label ">
+    <a href="/users/forget-password">Forgot Password?</a>
+</label>
+  </div>
+<div class="checkbox p-t-15">
+  <label class="label ">
+    No Account? <a href="/register">Register</a>
+</label>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"63ef55a8ec1f637d","si":10,"version":"2021.4.0"}'></script> -->
+</body>
+</html>

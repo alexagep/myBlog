@@ -1,0 +1,116 @@
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+  <div class="position-sticky pt-3">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        
+        <a class="nav-link d-flex align-items-center btn btn-outline-secondary mb-2 <%= path === "/home" ? 'active' : '' %>" href="/home">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          <span class=" mr-3 mx-1">Home</span>
+            
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center btn btn-outline-secondary mb-2 <%= path === "/dashboard" ? 'active' : '' %>" href="/dashboard">
+          <i class="fa fa-tachometer-alt" aria-hidden="true"></i>  
+          <span class=" mr-3 mx-1">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex align-items-center btn btn-outline-secondary mb-2 <%= path === "/dashboard/addPost" ? 'active' : '' %>" href="/dashboard/addPost">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <span class=" mr-3 mx-1">Create a new post</span>
+
+
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class='fas fa-award'></i>
+          <span data-feather="shopping-cart"></span>
+          Best Advisors
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class='fas fa-chart-bar'></i>
+          <span data-feather="shopping-cart"></span>
+          Charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class='far fa-newspaper'></i>
+          <span data-feather="users"></span>
+          Articles
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class='fas fa-hand-holding-usd'></i>
+          <span data-feather="bar-chart-2"></span>
+          Markets
+        </a>
+      </li>
+      
+      <li class="nav-item form-group">
+        <a class="nav-link" href="#">
+          <i class="far fa-comment"></i>
+          <span data-feather="layers"></span>
+          Ideas
+        </a>
+      </li>
+
+      <li class="nav-item form-group">
+        <a class="nav-link" href="#">
+          <i class='fas fa-cash-register'></i>
+          <span data-feather="layers"></span>
+          Play Demo
+        </a>
+      </li>
+    </ul>
+
+    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+      <span>User panel</span>
+      <a class="link-secondary" href="#" aria-label="Add a new report">
+        <span data-feather="plus-circle"></span>
+      </a>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-heart" aria-hidden="true"></i>
+          <span data-feather="file-text"></span>
+          Favourite Posts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+          <span data-feather="file-text"></span>
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+          <span data-feather="file-text"></span>
+          Settings
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-user-circle"></i>
+          <span data-feather="file-text"></span>
+          My Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">
+          <i class="fas fa-fax"></i>
+          <span data-feather="file-text"></span>
+          Contact us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,24 @@
+<% if(posts.length > 0) { %> <% for(let post of posts) { %>
+    <div class="card mt-4 mb-4 " style=" width: 600px; height: 600px; margin-left: 250px;">
+        <img
+            class="card-img-top"
+            src="http://localhost:1000/uploads/thumbnails/<%= post.thumbnail %>"
+            alt="Card image cap" style=" width: 600px; height: 350px;"/>
+        <div class="card-body">
+            <h2 class="card-title"><%= post.title %></h2>
+            <p class="card-text text-justify"><%- truncate(post.body, 400) %></p>
+            <a href="/home/post/<%= post._id %>" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="card-footer text-muted">
+            posted on: <%= formatDate(post.createdAt) %> -- by: <%= post.user.username %>
+        </div>
+        
+    </div>
+
+    <% } %> <% } else {%>
+    <div class="m-5 text-center">
+        <h1>No Post Found!</h1>
+    </div>
+    <% } %>
+
+    

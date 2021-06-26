@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title> <%= pageTitle  %>  </title>
+   
+
+    <link href="/css/forget.css" rel="stylesheet" media="all"> 
+
+  </head>
+  <body>
+  
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w380">
+          <div class="card card-4">
+            <div class="card-body">
+              <h2 class="title">Reset Password</h2>
+              <form action="/users/forget-password" method="POST">
+      
+      <div class="row row-space">
+        <div class="col-2">
+          <div class="input-group">
+            <%- include("./includes/loginMessages.ejs") %> 
+            <label for="inputPassword" class="label">Password</label>
+            <input class="input--style-4" type="password" name="password" id="inputPassword" placeholder="Password">
+          </div>
+          <div class="input-group">
+            <label for="inputConfirmPassword" class="label">confirm password</label>
+            <input class="input--style-4" type="password" name="confirmPassword" id="inputConfirmPassword" placeholder="Confirm Password">
+          </div>
+        </div>
+      </div>
+    
+    
+    <div class="p-t-15">
+    <button class="btn btn--radius-2 btn--blue" type="submit">
+        Reset Password
+    </button>
+    </div>
+    
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+  </body>
+</html>
