@@ -30,16 +30,16 @@ const smtpTransport = require('nodemailer-smtp-transport');
 // const nodemailer = require('nconst transporter = nodeMailer.createTransport({
 //     service: 'gmail',
 //     auth:{
-//         user: "alagha911@gmail.com",
-//         pass: "illianov84"
+//         user: "example@gmail.com",
+//         pass: "123456789"
 //     }
 // });odemailer');
 
 // 
 
 // const options = {
-//     from: "alagha911@gmail.com",
-//     to: "saeid.aghapour@gmail.com",
+//     from: "example@gmail.com",
+//     to: "saeid@gmail.com",
 //     subject: "nodemailer TEST",
 //     text: "test of Nodemailer"
 // }
@@ -58,7 +58,7 @@ exports.sendEmail = (email, firstName, subject, message) => {
         }
     });
     transporter.sendMail({
-        from: "alagha911@gmail.com",
+        from: "example@gmail.com",
         to: email,
         subject: subject,
         html: `<h4> HI ${firstName}</h4>
